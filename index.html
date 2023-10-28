@@ -7,6 +7,11 @@
 </head>
 <body>
     <style>
+        .LOGO-img {
+            border-radius: 50px;
+            margin-left: 40px;
+        }
+    
         .Subscribe-button {
             background-color: rgb(199, 0, 0);
             color: white;
@@ -25,22 +30,24 @@
             opacity: 0.3;
         }
         .Join-button {
-            background-color: white;
-            color: rgb(0, 183, 255);
+            background-color: rgb(0, 157, 219);
+            color: white;
             height: 36px;
             width: 105px;
             border-radius: 4px;
             border-width: 1px;
             border-style: solid;
-            border-color: rgb(0, 183, 255);
+            border-color: rgb(0, 157, 219);
             cursor: pointer;
             margin-right: 8px;
+            font-weight: bold;
+            font-size: 16px;
             transition: background-color 0.15s,
             color 0.15s;
         }
         .Join-button:hover {
-            background-color: rgb(0, 183, 255);
-            color: white;
+            background-color: white;
+            color: rgb(0, 157, 219);
         }
         .Join-button:active {
             opacity: 0.3;
@@ -60,7 +67,27 @@
         .Tweet-button:hover {
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
         }
+        .linkdin-button {
+            background-color: rgb(0, 157, 219);
+            color: white;
+            height: 36px;
+            width: 105px;
+            border-radius: 4px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(0, 157, 219);
+            cursor: pointer;
+            margin-right: 8px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: box-shadow 0.15s;
+            
+        }
+        .linkdin-button:hover {
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+        }
     </style>
+    <img class="LOGO-img" src="LOGO.jpg" alt="Avatar" style="width:100px;height:100px">
     <h1>
         MAD_DRAX
     </h1>
@@ -72,7 +99,28 @@
             SUBSCRIBE
      
         </button>
-    <button class="Join-button">JOIN</button>
-    <button class="Tweet-button">Tweet</button>
+    <button
+        class="Join-button" 
+        onclick="window.location.href='https://www.instagram.com/i__am__hack_er/'" 
+        target="_blank"> 
+
+            Follow
+
+    </button>
+    <button 
+        class="Tweet-button"
+        onclick="window.location.href='https://twitter.com/Druthendra'" 
+        target="_blank">
+
+            Tweet
+
+    </button>
+    <button class="linkdin-button"
+        onclick="window.location.href='https://www.linkedin.com/in/kommidruthendra/'" 
+        target="_blank">
+
+            Linkd in
+
+        </button>
 </body>
 </html>
