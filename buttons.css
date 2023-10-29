@@ -1,0 +1,79 @@
+.LOGO-img {
+    border-radius: 50px;
+    margin-left: 35px;
+}
+
+.Subscribe-button {
+    background-color: rgb(199, 0, 0);
+    color: white;
+    border: none;
+    height: 36px;
+    width: 105px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: opacity 0.15s;
+}
+.Subscribe-button:hover {
+    opacity: 0.7;
+}
+.Subscribe-button:active {
+    opacity: 0.3;
+}
+.Join-button {
+    background-color: rgb(0, 157, 219);
+    color: white;
+    height: 36px;
+    width: 105px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(0, 157, 219);
+    cursor: pointer;
+    margin-right: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.15s,
+    color 0.15s;
+}
+.Join-button:hover {
+    background-color: white;
+    color: rgb(0, 157, 219);
+}
+.Join-button:active {
+    opacity: 0.3;
+}
+.Tweet-button {
+    background-color: rgb(0, 122, 222);
+    color:white;
+    height: 36px;
+    width: 105px;
+    border: none;
+    border-radius: 18px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: box-shadow 0.15s;
+}
+.Tweet-button:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+.linkdin-button {
+    background-color: rgb(0, 110, 255);
+    color: white;
+    height: 36px;
+    width: 105px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(0, 110, 255);
+    cursor: pointer;
+    margin-right: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: box-shadow 0.15s;
+    
+}
+.linkdin-button:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
