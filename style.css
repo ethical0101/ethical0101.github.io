@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+    
+}
+body {
+    background-image: url("LOGO.jpg");
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome {
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    color: #da1616;
+}
+.main {
+    border: 1px solid #717377;
+    padding: 20px;
+    border-radius: 16px;
+    background-color: transparent;
+    box-shadow: 0px 3px 15px rgba(255, 255, 255, 0.7);
+}
+input {
+    color: white;
+    border: none;
+    text-align: left;
+    width: 270px;
+    height: 29px;
+    padding: 5px;
+    border-radius: 7px;
+    background-color:transparent;
+    margin: 10px;
+    box-shadow: 0px 3px 15px rgba(255, 255, 255, 0.3);
+    font-style: italic;
+    font-size: 17px;
+    cursor: pointer;
+}
+.imguser {
+    width: 50px;
+}
+button {
+    margin-left: 30px;
+    height: 30px;
+    font-size: 17px;
+    border: none;
+    padding: none;
+    border-radius: 10px;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    color: #da1616;
+    box-shadow: 0px 3px 3px rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+    margin: none;
+    width:100px;
+}
+.button {
+    align-items: center;
+}
+#title{
+    display: flex;
+    font-family: 'Marcellus SC', serif;
+    font-size:3rem;
+    margin:auto;
+    width:100%;
+    display: inline-block;
+    color:#104358;
+    position:relative;   
+}
+
+.logo-container{
+  position: absolute;
+  left:210px;
+  top:20px;
+  width:100px;
+}
+
+.logo{
+    width:100%;
+}
