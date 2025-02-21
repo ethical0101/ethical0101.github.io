@@ -1,70 +1,553 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Page</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-</head>
-<body>
-  <header>
-    <div>
-        <a class="shortlinks" href="index.html"><span style="color:white">Home</span></a>
-<!--         <a class="shortlinks"><span style="color:white">About</span></a> -->
-        <a class="shortlinks" href="https://github.com/ethical0101?tab=repositories"><span style="color:white">Projects</span></a>
-        <a class="shortlinks" href="contact_me.html"><span style="color:white">Contant-me</span></a>
-    </div>
-    
-  </header>
-  <main>
-    <section class="container">
-        <img src="styles/Me_B_nd_W_Profile.jpg" alt="Logo of Mad_Drax">
-        <div class="name">
-            <h1>
-                <span style="color:#f9532d;">Druthendra</span>
-                <span style="color:#ffffff;"><b>_</b></span>
-                <span style="color:#ffffff;">Kommi</span>
-            </h1>
+<html>
+    <head>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="portfolio.css" />
+    </head>
+
+    <body>
+        <nav
+            class="navbar navbar-expand-lg navbar-light bg-white mb-5 fixed-top"
+        >
+            <a class="navbar-brand bold ml-md-5 ml-sm-0" href="#home"
+                >Druthendra Kommi's Portfolio</a
+            >
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto bold">
+                    <a class="nav-link active mr-4" href="#home">Home </a>
+                    <a class="nav-link mr-4" href="#about">About</a>
+                    <a class="nav-link mr-4" href="#skilss">Skills</a>
+                    <a class="nav-link mr-4" href="#projects">Projects</a>
+                    <a class="nav-link mr-4" href="#contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+        <div id="home" class="mt-5 mb-5">
+            <div
+                class="container text-center bg-container d-flex flex-column justify-content-center"
+            >
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-5">
+                        <img
+                            src="profile.jpg"
+                            class="image1"
+                        />
+                    </div>
+                    <div class="col-12 col-md-6 align-items-center">
+                        <h5 class="grey mb-3">Hello, I'm</h5>
+                        <h3 class="bold mb-3">Druthendra Kommi</h3>
+                        <h2>Web Devolper & Software Engineer</h2>
+                        <div
+                            class="d-flex flex-row justify-content-center mt-5"
+                        >
+                            <button class="btn1 mr-4">Resume</button>
+                            <a href="#contact"
+                                ><button class="btn2">Contact Me</button></a
+                            >
+                        </div>
+                        <div
+                            class="d-flex flex-row justify-content-center mt-4"
+                        >
+                            <a
+                                href="https://www.linkedin.com/in/kommidruthendra/"
+                                target="_blank"
+                            >
+                                <button class="icons mr-3 shadow">
+                                    <i
+                                        class="fa-brands fa-linkedin-in fa-lg"
+                                    ></i></button
+                            ></a>
+                            <a
+                                href="https://github.com/ethical0101.git"
+                                target="_blank"
+                            >
+                                <button class="icons mr-3 shadow">
+                                    <i
+                                        class="fa-brands fa-github fa-lg"
+                                    ></i></button
+                            ></a>
+                            <a
+                                href="https://x.com/Druthendra/"
+                                target="_blank"
+                            >
+                                <button class="icons shadow">
+                                    <i
+                                        class="fa-brands fa-twitter fa-lg"
+                                    ></i></button
+                            ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
-    <br>    
-    <div class="introduction">
-        <h1 class="typewriter"><big><b>HELLO!</b></big></h1>
-        <p>
-          <b>Welcome</b> to my personal web page! 
-          This is where I share my thoughts, 
-          experiences, and interests with the world.
-          I’m currently working on improving the page,
-          so please bear with me while I make some changes.
-          In the meantime, feel free to explore the content that’s already available.
-          I hope you find something that interests you!
-        </p>
-        <ul>
-            <li class="item" onclick="window.location.href='https://www.instagram.com/i__am__hack_er/'" target="_blank">
-              <a href="#">
-                <i class="fa-brands fa-instagram icon"></i>
-              </a>
-            </li>
-            <li class="item" onclick="window.location.href='https://www.linkedin.com/in/kommidruthendra/'" 
-            target="_blank">
-              <a href="#">
-                <i class="fa-brands fa-linkedin icon"></i>
-              </a>
-            </li>
-            <li class="item" onclick="window.location.href='https://www.youtube.com/channel/UCEu6cXIrRnJwVKUgBZwR1ww'" target="_blank">
-              <a href="#">
-                <i class="fa-brands fa-youtube icon"></i>
-                
-              </a>
-            </li>
-            <li class="item" onclick="window.location.href='https://twitter.com/Druthendra'" target="_blank">
-              <a href="#">
-                <i class="fa-brands fa-x-twitter icon"></i>
-              </a>
-            </li>
-          </ul>
-    </div>
-  </main>
-</body>
+        <div id="about" class="mt-5 mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h6 class="grey">Get To Know More</h6>
+                        <h1 class="bold">About Me</h1>
+                        <h1 class="left mt-5">Education</h1>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex justify-content-center">
+                        <div
+                            class="about-container m-1 mt-5 m-md-5 align-items-center"
+                        >
+                            <p
+                                class="left ml-3"
+                                style="color: orange; font-weight: bold"
+                            >
+                                Bachelor of Technology
+                            </p>
+                            <h6 class="left ml-3 mt-4" style="color: #f8f8ff">
+                                Computer Science and Engineering
+                            </h6>
+                            <h6 class="left ml-3 mt-3" style="color: #f8f8ff">
+                                VIT - Vellore
+                            </h6>
+                            <p style="text-align: end; color: grey">
+                                2023 - 2028
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex justify-content-center">
+                        <div
+                            class="about-container m-1 m-md-5 mt-5 text-center"
+                        >
+                            <h4 class="left ml-3" style="color: orange">
+                                Intermediate
+                            </h4>
+                            <h6 class="left ml-3 mt-4" style="color: #f8f8ff">
+                                MPC
+                            </h6>
+                            <h6 class="left ml-3 mt-3" style="color: #f8f8ff">
+                                SR - Nellore
+                            </h6>
+                            <p style="text-align: end; color: grey">
+                                2021 - 2023
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-5 text-center mb-5">
+            <div class="container text-center ml-auto mr-auto">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <h1 class="left mt-5 mb-5">Experience</h1>
+                    </div>
+                    <div class="col-12 col-md-6 mt-3">
+                        <div class="expContainer m-2 p-2 pl-3">
+                            <h3 class="text-left mt-3" style="color: orange">
+                                Seculinx
+                            </h3>
+                            <h4 class="mt-3 text-left" style="color: white">
+                                Web-Developer Intern
+                            </h4>
+                            <h6 class="mt-2 text-left" style="color: grey">
+                                Nov 2024 - Present
+                            </h6>
+                            <button
+                                type="button"
+                                class="mt-2 btn btn-light"
+                                data-toggle="modal"
+                                data-target="#exampleModal1"
+                            >
+                                View Details
+                            </button>
+                        </div>
+                        <!-- Modal -->
+                        <div
+                            class="modal fade"
+                            id="exampleModal1"
+                            tabindex="-1"
+                            aria-labelledby="exampleModalLabel"
+                            aria-hidden="true"
+                        >
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5
+                                            class="modal-title"
+                                            id="exampleModalLabel"
+                                        >
+                                            Web-Developer Intern
+                                        </h5>
+                                        <button
+                                            type="button"
+                                            class="close"
+                                            data-dismiss="modal"
+                                            aria-label="Close"
+                                        >
+                                            <span aria-hidden="true"
+                                                >&times;</span
+                                            >
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul class="text-left">
+                                            <li>
+                                                Developed a
+                                                <strong
+                                                    >responsive footer</strong
+                                                >
+                                                for the
+                                                <strong>Seculinx website</strong
+                                                >, ensuring seamless
+                                                adaptability across devices.
+                                            </li>
+                                            <li>
+                                                Focused on optimizing the
+                                                footer's UI/UX for better
+                                                accessibility and design
+                                                consistency.
+                                            </li>
+                                            <li>
+                                                Enhanced skills in
+                                                <strong
+                                                    >frontend
+                                                    development</strong
+                                                >, including responsive design
+                                                and layout structuring.
+                                            </li>
+                                            <li>
+                                                Contributed to improving the
+                                                website’s overall user
+                                                experience through a
+                                                well-structured footer.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a
+                                            href="https://github.com/Seculinx/Footer"
+                                            target="_blank"
+                                            class="mr-auto"
+                                            ><button
+                                                type="button"
+                                                class="btn btn-secondary"
+                                            >
+                                                View My Work
+                                            </button></a
+                                        >
+                                        <button
+                                            type="button"
+                                            class="btn btn-dark"
+                                            data-dismiss="modal"
+                                        >
+                                            Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+            </div>
+        </div>
+        <div
+            id="skilss"
+            class="bg-container3 d-flex flex-column justify-content-center mt-5 mb-5"
+        >
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-5">
+                        <p class="grey">Explore My</p>
+                        <h1 class="bold">Skills</h1>
+                    </div>
+                    <div class="text-center">
+                        <!-- Programming Languages -->
+                        <button class="skilsbtn m-2">Python</button>
+                        <button class="skilsbtn m-2">Java</button>
+                        <button class="skilsbtn m-2">C</button>
+                        <button class="skilsbtn m-2">SQL</button>
+                        <button class="skilsbtn m-2">JavaScript</button>
+
+                        <!-- Frontend Development -->
+                        <button class="skilsbtn m-2">HTML</button>
+                        <button class="skilsbtn m-2">CSS</button>
+                        <button class="skilsbtn m-2">React</button>
+
+                        <!-- Version Control & Tools -->
+                        <button class="skilsbtn m-2">Git</button>
+                        <button class="skilsbtn m-2">GitHub</button>
+                        <button class="skilsbtn m-2">Figma</button>
+
+                        <!-- Other Skills -->
+                        <button class="skilsbtn m-2">Problem Solving</button>
+                        <button class="skilsbtn m-2">DSA</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="projects" class="mt-5 mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-5">
+                        <p class="grey">Browse My Recent</p>
+                        <h1 class="bold">Projects</h1>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mt-4 pb-3">
+                        <div class="progectContainer">
+                            <div>
+                                <img
+                                    src="8325.png"
+                                    class="w-100 imageprogect"
+                                />
+                            </div>
+                            <div class="text-center mt-4 pb-5 p-2 p-lg-0">
+                                <h4>AI Trip Planner(Native App)</h4>
+                                <div class="mt-5 pb-4">
+                                    <a
+                                        href="https://druthendra--3b6n52iqib.expo.app/"
+                                        target="_blank"
+                                        ><button class="mr-4 skilsbtn">
+                                            View Project
+                                        </button></a
+                                    >
+                                    <a
+                                        href="https://github.com/ethical0101/AI-Trip-Planner.git"
+                                        target="_blank"
+                                        ><button class="ml-4 skilsbtn">
+                                            View Repo
+                                        </button></a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mt-4 pb-3">
+                        <div class="progectContainer">
+                            <div>
+                                <img
+                                    src="Microsoft-Loop.jpg"
+                                    class="w-100 imageprogect"
+                                />
+                            </div>
+                            <div class="text-center mt-4 pb-5 p-2 p-lg-0">
+                                <h4>Document Planner</h4>
+                                <div class="mt-5 pb-4">
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        ><button class="mr-4 skilsbtn">
+                                            View Project
+                                        </button></a
+                                    >
+                                    <a
+                                        href="https://github.com/ethical0101/Document-Planner.git"
+                                        target="_blank"
+                                        ><button class="ml-4 skilsbtn">
+                                            View Repo
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="Certificates" class="mt-5 mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-5">
+                        <p class="grey">My</p>
+                        <h1 class="bold">Awards & Certificates</h1>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mt-4">
+                        <div class="certificate-container">
+                            <img
+                                src="https://i.ibb.co/kmDKbC6/Screenshot-2024-12-01-004345.png"
+                                class="w-100 rounded"/>
+                            <h4 class="text-center mt-3">Python Programming</h4>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mt-4">
+                        <div class="certificate-container">
+                            <img
+                                src="https://i.ibb.co/wWBHpHS/Screenshot-2024-12-01-004445.png"
+                                class="w-100 rounded"/>
+                            <h4 class="text-center mt-3">Java Script</h4>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mt-4">
+                        <div class="certificate-container">
+                            <img
+                                src="https://i.ibb.co/RPFQC71/Screenshot-2024-12-01-004420.png"
+                                class="w-100 rounded"/>
+                            <h4 class="text-center mt-3">
+                                Python Problem Solving
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mt-4">
+                        <div class="certificate-container">
+                            <img
+                                src="https://i.ibb.co/58f03g6/Screenshot-2024-12-01-004544.png"
+                                class="w-100 rounded"/>
+                            <h4 class="text-center mt-3">Teaching Assistant</h4>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mt-4">
+                        <div class="certificate-container">
+                            <img
+                                src="https://i.ibb.co/SywV7vW/Screenshot-2024-12-01-004524.png"
+                                class="w-100 rounded"/>
+                            <h4 class="text-center mt-3">Power BI</h4>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mt-4">
+                        <div class="certificate-container">
+                            <img
+                                src="https://i.ibb.co/JCgRxQY/Screenshot-2024-12-01-004747.png"
+                                class="w-100 rounded"/>
+                            <h4 class="text-center mt-3">Idea ForeG</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div id="contact" class="mt-5 mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mt-5 mb-5">
+                        <p class="grey">Get In Touch</p>
+                        <h1 class="bold">Contact Me</h1>
+                    </div>
+                    <div class="col-12 col-md-6 text-center">
+                        <img
+                            src="https://i.ibb.co/3FTm03r/Screenshot-2024-12-01-011153-removebg-preview.png"
+                            class="w-80"
+                        />
+                        <h4 class="text-md-left ml-3">Let's Connect</h4>
+                        <p class="text-md-left ml-3">
+                            I’m a Software Engineer and frontend developer
+                            passionate about problem-solving and creating
+                            user-friendly interfaces. Always open to exciting
+                            opportunities!
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6 align-items-center mb-5">
+                        <div class="mb-4">
+                            <label for="name">Name</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="name"
+                                placeholder="Enter Your name..."
+                            />
+                            <p id="nameErrMsg" class="error-message"></p>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email">Email</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="email"
+                                placeholder="Enter you maildId..."
+                            />
+                            <p id="emailErrMsg" class="error-message"></p>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email">Enter Query</label>
+                            <textarea
+                                class="form-control"
+                                placeholder="Enter your msg here..."
+                            ></textarea>
+                            <p id="emailErrMsg" class="error-message"></p>
+                        </div>
+                        <div class="mt-3 mb-3 d-flex flex-row">
+                            <a
+                                href="https://www.linkedin.com/in/kommidruthendra/"
+                                target="_blank"
+                            >
+                                <button class="icons mr-3 shadow">
+                                    <i
+                                        class="fa-brands fa-linkedin-in fa-lg"
+                                        style="color: #1651da"
+                                    ></i></button
+                            ></a>
+                            <a
+                                href="https://github.com/ethical0101.git"
+                                target="_blank"
+                            >
+                                <button class="icons mr-3 shadow">
+                                    <i
+                                        class="fa-brands fa-github fa-lg"
+                                    ></i></button
+                            ></a>
+                            <!-- <a href="https://www.instagram.com/i__am__hack_er/" target="_blank">
+                                <button class="icons shadow">
+                                    <i class="fa-brands fa-instagram fa-lg"></i>
+                                </button>
+                            </a> -->
+
+                            <a
+                                href="https://x.com/Druthendra/"
+                                target="_blank"
+                            >
+                                <button class="icons shadow">
+                                    <i
+                                        class="fa-brands fa-twitter fa-lg"
+                                    ></i></button></a
+                            ><br />
+                        </div>
+                        <div class="text-right">
+                            <button class="btn btn-dark mt-3">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer p-5 text-center">
+            <h4 style="color: white">
+                Devolped by
+                <span style="color: orange; font-weight: bold">
+                    Druthendra Kommi</span
+                >
+            </h4>
+        </div>
+        <script src="portfolio.js"></script>
+    </body>
 </html>
