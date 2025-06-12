@@ -27,6 +27,7 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="portfolio.css" />
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     </head>
 
     <body>
@@ -64,18 +65,18 @@
                 <div class="row">
                     <div class="col-12 col-md-6 mb-5">
                         <img
-                            src="profile.jpg"
+                            src="images/profile.jpg"
                             class="image1"
                         />
                     </div>
                     <div class="col-12 col-md-6 align-items-center">
                         <h5 class="grey mb-3">Hello, I'm</h5>
                         <h3 class="bold mb-3">Druthendra Kommi</h3>
-                        <h2>Web Devolper & Software Engineer</h2>
+                        <h2>Web Devolver & Software Engineer</h2>
                         <div
                             class="d-flex flex-row justify-content-center mt-5"
                         >
-                            <button class="btn1 mr-4">Resume</button>
+                            <button class="btn1 mr-4" data-toggle="modal" data-target="#resumeModal">Resume</button>
                             <a href="#contact"
                                 ><button class="btn2">Contact Me</button></a
                             >
@@ -174,13 +175,84 @@
                     <div class="col-12 col-md-6 mt-3">
                         <div class="expContainer m-2 p-2 pl-3">
                             <h3 class="text-left mt-3" style="color: orange">
+                                Scientiflow
+                            </h3>
+                            <h4 class="mt-3 text-left" style="color: white">
+                                Frontend Developer Intern
+                            </h4>
+                            <h6 class="mt-2 text-left" style="color: grey">
+                                May 2025 - Present
+                            </h6>
+                            <button
+                                type="button"
+                                class="mt-2 btn btn-light"
+                                data-toggle="modal"
+                                data-target="#exampleModal2"
+                            >
+                                View Details
+                            </button>
+                        </div>
+                        <div
+                            class="modal fade"
+                            id="exampleModal2"
+                            tabindex="-1"
+                            aria-labelledby="exampleModalLabel2"
+                            aria-hidden="true"
+                        >
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5
+                                            class="modal-title"
+                                            id="exampleModalLabel2"
+                                        >
+                                            Frontend Developer Intern
+                                        </h5>
+                                        <button
+                                            type="button"
+                                            class="close"
+                                            data-dismiss="modal"
+                                            aria-label="Close"
+                                        >
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul class="text-left">
+                                            <li>
+                                                Currently working on frontend development projects at Scientiflow
+                                            </li>
+                                            <li>
+                                                Developing responsive and user-friendly web interfaces
+                                            </li>
+                                            <li>
+                                                Collaborating with the team on various web development tasks
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button
+                                            type="button"
+                                            class="btn btn-dark"
+                                            data-dismiss="modal"
+                                        >
+                                            Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 mt-3">
+                        <div class="expContainer m-2 p-2 pl-3">
+                            <h3 class="text-left mt-3" style="color: orange">
                                 Seculinx
                             </h3>
                             <h4 class="mt-3 text-left" style="color: white">
-                                Web-Developer Intern
+                                Web Developer Intern
                             </h4>
                             <h6 class="mt-2 text-left" style="color: grey">
-                                Nov 2024 - Present
+                                Feb 2025 - may 2025
                             </h6>
                             <button
                                 type="button"
@@ -222,34 +294,13 @@
                                     <div class="modal-body">
                                         <ul class="text-left">
                                             <li>
-                                                Developed a
-                                                <strong
-                                                    >responsive footer</strong
-                                                >
-                                                for the
-                                                <strong>Seculinx website</strong
-                                                >, ensuring seamless
-                                                adaptability across devices.
+                                                Developed a GUI application using Python and PySide6 for Scientiflow-CLI, transforming a terminal-based tool into a user-friendly interface
                                             </li>
                                             <li>
-                                                Focused on optimizing the
-                                                footer's UI/UX for better
-                                                accessibility and design
-                                                consistency.
+                                                Collaborated in a team of 2 developers to enhance user experience
                                             </li>
                                             <li>
-                                                Enhanced skills in
-                                                <strong
-                                                    >frontend
-                                                    development</strong
-                                                >, including responsive design
-                                                and layout structuring.
-                                            </li>
-                                            <li>
-                                                Contributed to improving the
-                                                website’s overall user
-                                                experience through a
-                                                well-structured footer.
+                                                Working on frontend development projects and responsive web interfaces
                                             </li>
                                         </ul>
                                     </div>
@@ -330,11 +381,12 @@
                         <div class="progectContainer">
                             <div>
                                 <img
-                                    src="8325.png"
+                                    src="images/ai-trip-planner.png"
                                     class="w-100 imageprogect"
                                 />
                             </div>
                             <div class="text-center mt-4 pb-5 p-2 p-lg-0">
+
                                 <h4>AI Trip Planner(Native App)</h4>
                                 <div class="mt-5 pb-4">
                                     <a
@@ -359,7 +411,7 @@
                         <div class="progectContainer">
                             <div>
                                 <img
-                                    src="Microsoft-Loop.jpg"
+                                    src="images/document-planner.jpg"
                                     class="w-100 imageprogect"
                                 />
                             </div>
@@ -468,74 +520,55 @@
                         </p>
                     </div>
                     <div class="col-12 col-md-6 align-items-center mb-5">
-                        <div class="mb-4">
-                            <label for="name">Name</label>
-                            <input
-                                type="text"
-                                class="form-control"
-                                id="name"
-                                placeholder="Enter Your name..."
-                            />
-                            <p id="nameErrMsg" class="error-message"></p>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email">Email</label>
-                            <input
-                                type="text"
-                                class="form-control"
-                                id="email"
-                                placeholder="Enter you maildId..."
-                            />
-                            <p id="emailErrMsg" class="error-message"></p>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="email">Enter Query</label>
-                            <textarea
-                                class="form-control"
-                                placeholder="Enter your msg here..."
-                            ></textarea>
-                            <p id="emailErrMsg" class="error-message"></p>
-                        </div>
-                        <div class="mt-3 mb-3 d-flex flex-row">
-                            <a
-                                href="https://www.linkedin.com/in/kommidruthendra/"
-                                target="_blank"
-                            >
-                                <button class="icons mr-3 shadow">
-                                    <i
-                                        class="fa-brands fa-linkedin-in fa-lg"
-                                        style="color: #1651da"
-                                    ></i></button
-                            ></a>
-                            <a
-                                href="https://github.com/ethical0101.git"
-                                target="_blank"
-                            >
-                                <button class="icons mr-3 shadow">
-                                    <i
-                                        class="fa-brands fa-github fa-lg"
-                                    ></i></button
-                            ></a>
-                            <!-- <a href="https://www.instagram.com/i__am__hack_er/" target="_blank">
-                                <button class="icons shadow">
-                                    <i class="fa-brands fa-instagram fa-lg"></i>
-                                </button>
-                            </a> -->
-
-                            <a
-                                href="https://x.com/Druthendra/"
-                                target="_blank"
-                            >
-                                <button class="icons shadow">
-                                    <i
-                                        class="fa-brands fa-twitter fa-lg"
-                                    ></i></button></a
-                            ><br />
-                        </div>
-                        <div class="text-right">
-                            <button class="btn btn-dark mt-3">Submit</button>
-                        </div>
+                        <form id="contactForm" class="needs-validation" novalidate>
+                            <div class="mb-4">
+                                <label for="name">Name *</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Enter Your name..."
+                                    required />
+                                <div class="invalid-feedback">Please enter your name</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email">Email *</label>
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Enter your email..."
+                                    required />
+                                <div class="invalid-feedback">Please enter a valid email address</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message">Message *</label>
+                                <textarea class="form-control" id="message" name="message" placeholder="Enter your message here..." required rows="4"></textarea>
+                                <div class="invalid-feedback">Please enter your message</div>
+                            </div>
+                            <div class="mt-3 mb-3 d-flex flex-row">
+                                <a href="https://www.linkedin.com/in/kommidruthendra/" target="_blank">
+                                    <button type="button" class="icons mr-3 shadow">
+                                        <i class="fa-brands fa-linkedin-in fa-lg" style="color: #1651da"></i>
+                                    </button>
+                                </a>
+                                <a href="https://github.com/ethical0101.git" target="_blank">
+                                    <button type="button" class="icons mr-3 shadow">
+                                        <i class="fa-brands fa-github fa-lg"></i>
+                                    </button>
+                                </a>
+                                <a href="https://x.com/Druthendra/" target="_blank">
+                                    <button type="button" class="icons shadow">
+                                        <i class="fa-brands fa-twitter fa-lg"></i>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="text-right">
+                                <button type="submit" class="btn btn-dark mt-3">Send Message</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -549,5 +582,43 @@
             </h4>
         </div>
         <script src="portfolio.js"></script>
+
+        <!-- Resume Modal -->
+<div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content" style="position:relative;">
+      <div class="modal-header">
+        <h5 class="modal-title" id="resumeModalLabel">My Resume</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="closeResumeModal">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body p-0" style="position:relative; height: 80vh; overflow-y: auto;">
+        <!-- Overlay to block selection/copy -->
+        <div id="resumeOverlay" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:2;"></div>
+        <iframe
+          src="Druthendra Kommi's Resume.pdf#toolbar=0&navpanes=0&scrollbar=0"
+          style="border:none; width:100%; height:80vh; z-index:1; display:block;"
+          id="resumeIframe"
+          allow="clipboard-write"
+        ></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-dismiss="modal">Back</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Disable right-click and selection in the resume modal
+$('#resumeModal').on('shown.bs.modal', function () {
+    const overlay = document.getElementById('resumeOverlay');
+    overlay.oncontextmenu = function() { return false; };
+    overlay.onselectstart = function() { return false; };
+    overlay.onmousedown = function() { return false; };
+    overlay.style.cursor = "not-allowed";
+});
+</script>
     </body>
 </html>
