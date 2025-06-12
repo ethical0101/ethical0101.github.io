@@ -585,7 +585,7 @@
 
         <!-- Resume Modal -->
 <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl modal-dialog-centered">
+  <div class="modal-dialog modal-xl modal-dialog-centered" style="max-width: 100vw;">
     <div class="modal-content" style="position:relative;">
       <div class="modal-header">
         <h5 class="modal-title" id="resumeModalLabel">My Resume</h5>
@@ -593,12 +593,11 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body p-0" style="position:relative; height: 80vh; overflow-y: auto;">
-        <!-- Overlay to block selection/copy -->
-        <div id="resumeOverlay" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:2;"></div>
+      <div class="modal-body p-0" style="position:relative; height: 90vh; overflow-y: auto;">
+        <!-- Removed overlay to allow copy/selection -->
         <iframe
           src="Druthendra Kommi's Resume.pdf#toolbar=0&navpanes=0&scrollbar=0"
-          style="border:none; width:100%; height:80vh; z-index:1; display:block;"
+          style="border:none; width:100vw; height:90vh; z-index:1; display:block;"
           id="resumeIframe"
           allow="clipboard-write"
         ></iframe>
@@ -611,13 +610,12 @@
 </div>
 
 <script>
-// Disable right-click and selection in the resume modal
+// Prevent right-click (context menu) on the PDF iframe to discourage download
 $('#resumeModal').on('shown.bs.modal', function () {
-    const overlay = document.getElementById('resumeOverlay');
-    overlay.oncontextmenu = function() { return false; };
-    overlay.onselectstart = function() { return false; };
-    overlay.onmousedown = function() { return false; };
-    overlay.style.cursor = "not-allowed";
+    const iframe = document.getElementById('resumeIframe');
+    iframe.contentWindow?.document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
 });
 </script>
     </body>
